@@ -208,3 +208,34 @@ void login_admin(){
         login_admin();
     }
 }
+
+
+// code for user login
+void NEW_ENTRY(){
+check++;
+printf("\n\n\n\n   ENTER VISITOR'S  NAME ");
+scanf("%s" , &visitor[check].name);
+printf("\n\n\n\n   ENTER VISITOR'S  ADDRESS ");
+scanf("%s" , &visitor[check].Address);
+printf("\n\n\n\n   ENTER VISITOR'S  MOBILE NUMBER ");
+scanf("%s" , &visitor[check].mobile_number);
+printf("\n\n\n\n   ENTER VISITOR'S  gender  ");
+printf("please  note  : INPUT  'M' FOR MALE 'F' FOR FEMALE 'O' FOR NOT SPECIFING ");
+scanf("%s" , &visitor[check].gender);
+visitor[check].status_code = 301;  // 301 means  visitor has checked in successfully
+
+printf("\n\n saving data .. \n");
+for(int i = 0;i<=20;i++){
+    printf("...");
+}
+printf("\n\n");
+
+welcome_page();
+}
+// drivers code
+void main(){
+    // welcome function to greet our visitors
+
+    welcome();
+    login_admin();
+}
