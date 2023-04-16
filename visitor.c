@@ -41,7 +41,7 @@ printf("\
            ********************************************************************* ");
            printf("\n\n\n\n    ");
 
-           printf("Project Developed by Divyansh , Liza , Sargam ");
+           printf("Project Developed by  Liza ");
            printf("\n\n");
            config(900000);
 
